@@ -2,6 +2,7 @@ body {
   height: 100vh;
   background: rgba(50, 50, 150, 0.85);
   font-weight: 300;
+  letter-spacing: 1.2px;
 }
 
 .App {
@@ -35,6 +36,7 @@ h3 {
   color: rgba(250, 250, 50, 0.9);
   margin: 0;
   padding: 0;
+  letter-spacing: 1.75px;
 }
 ul {
   width: 200px;
