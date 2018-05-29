@@ -15,12 +15,14 @@ export default class Projects extends Component {
       {
         name: 'Stripe Subscription Template',
         url: 'https://arcane-lowlands-69670.herokuapp.com',
-        background: stripeImg
+        background: stripeImg,
+        langs: 'NodeJS, Stripe API'
       },
       {
         name: 'Barzurk: Job Search App',
         url: 'https://intense-fortress-27919.herokuapp.com/',
-        background: barzurkImg
+        background: barzurkImg,
+        langs: 'NodeJS, ExpressJS'
       }
     ];
 
@@ -31,6 +33,7 @@ export default class Projects extends Component {
         {items.map(function(item, index){
            return (
             <li style={{backgroundImage: "url(" + item.background + ")"}} key={index}>
+              <p>{item.langs}</p>
               <a href={item.url} target="_blank">visit site</a>
             </li>)
          })}
