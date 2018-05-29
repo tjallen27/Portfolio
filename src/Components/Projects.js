@@ -6,11 +6,6 @@ import stripeImg from '../assets/stripe.png';
 
 export default class Projects extends Component {
   render(){
-    const backgrounds = {
-      bzk: barzurkImg,
-      strp: stripeImg
-    }
-
     const items = [
       {
         name: 'Stripe Subscription Template',
