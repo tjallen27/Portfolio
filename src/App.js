@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import Projects from './Components/Projects';
 import Links from './Components/Links';
 import Skills from './Components/Skills';
+import Contact from './Components/Contact';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ class App extends Component {
         <Projects />
         <Links />
         <Skills />
+        <Contact />
       </div>
     );
   }

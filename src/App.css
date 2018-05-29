@@ -4,7 +4,7 @@ body {
   background: rgba(255, 255, 255, 0.85);
   font-weight: 300;
   letter-spacing: 1.2px;
-  color: #202020;
+  color: #333;
 }
 h3 {
   font-size: 1.5em;
@@ -30,8 +30,7 @@ li {
   height: 75vh;
   position: relative;
   max-width: 800px;
-  margin: 0 auto;
-  top: 50%;
+  margin: 30% auto 0;
   font-size: 4em;
 }
 .header h1 {
@@ -69,11 +68,13 @@ li {
   font-weight: bold;
 }
 .socialLinks ul,
-.skillsList ul {
+.skillsList ul,
+.contact ul {
   text-align: center;
 }
 .socialLinks li ,
-.skillsList li {
+.skillsList li,
+.contact li {
   display: inline-block;
   float: none;
   margin: 20px 50px;
@@ -81,4 +82,16 @@ li {
 .socialLinks li a {
   text-decoration: none;
   color: #333;
+
+}
+.contact li {
+  font-size: 2em;
+  font-weight: bold;
+}
+.contact li a {
+  background-color: none;
+  color: #333;
+  padding: .5em;
+  text-decoration: none;
+  font-weight: bold;
 }
