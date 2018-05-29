@@ -39,7 +39,7 @@ li {
   height: 75vh;
   position: relative;
   max-width: 800px;
-  margin: 25% auto 0;
+  margin: 10% auto 0;
   font-size: 4em;
 }
 .header h1 {
@@ -47,7 +47,8 @@ li {
   margin-bottom: 0;
 }
 .header .header-sub {
-  padding-bottom: 0;
+  padding-bottom: 15px;
+  font-size: 0.8em;
 }
 .header .header-current {
   font-size: 0.5em;
