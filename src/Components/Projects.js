@@ -1,29 +1,38 @@
 import React, {Component} from 'react';
+import barzurkImg from '../assets/barzurk.png';
+import stripeImg from '../assets/stripe.png';
 
 
 
 export default class Projects extends Component {
   render(){
+    const backgrounds = {
+      bzk: barzurkImg,
+      strp: stripeImg
+    }
+
     const items = [
       {
         name: 'Stripe Subscription Template',
-        url: 'https://arcane-lowlands-69670.herokuapp.com'
+        url: 'https://arcane-lowlands-69670.herokuapp.com',
+        background: stripeImg
       },
       {
         name: 'Barzurk: Job Search App',
-        url: 'https://intense-fortress-27919.herokuapp.com/'
+        url: 'https://intense-fortress-27919.herokuapp.com/',
+        background: barzurkImg
       }
     ];
 
     return (
       <div className="projects">
-
         <ul>
         <h3>Personal Projects</h3>
         {items.map(function(item, index){
-           return (<li key={index}><a href={item.url} target="_blank">{item.name}</a></li>)
+           return (<li style={{backgroundImage: "url(" + item.background + ")"}} key={index}><a href={item.url} target="_blank">{item.name}</a></li>)
          })}
         </ul>
+
       </div>
     )
   }

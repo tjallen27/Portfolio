@@ -3,7 +3,9 @@ import Header from './Components/Header';
 import Projects from './Components/Projects';
 import Links from './Components/Links';
 import Skills from './Components/Skills';
+
 import './App.css';
+
 
 class App extends Component {
   render() {
