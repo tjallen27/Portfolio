@@ -10,6 +10,10 @@ export default class Links extends Component {
       {name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/tjallen27/',
       icon: <i className="fab fa-linkedin-in fa-2x"></i>
+    },
+      {name: 'CV',
+      url: 'file:///Users/thomasallen/Downloads/thomas%20allen%20CV.pdf',
+      icon: <i class="far fa-file-alt fa-2x"></i>
       }
     ];
 
@@ -17,7 +21,13 @@ export default class Links extends Component {
       <div className="socialLinks">
         <ul>
           {links.map(function(item, index){
-            return (<li key={index}><a href={item.url} target="_blank">{item.icon}</a></li>)
+            return (
+              <li key={index}>
+                <a href={item.url} target="_blank">
+                  {item.icon}
+                </a>
+                <p>{item.name}</p>
+              </li>)
           })}
         </ul>
       </div>
