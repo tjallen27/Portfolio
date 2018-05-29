@@ -1,17 +1,26 @@
-
-
 body {
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
   background: rgba(255, 255, 255, 0.85);
   font-weight: 300;
   letter-spacing: 1.2px;
   color: #202020;
 }
-h1 {
+h3 {
+  font-size: 1.5em;
+  margin: 50px 0 0;
+  padding: 0;
+  letter-spacing: 1.75px;
+  text-align: left;
+}
 
+li {
+  padding: 10px 0;
+  font-size: 1.2em;
+  list-style: none;
 }
 .App {
-  width: 600px;
+  width: 700px;
   margin: 0 auto;
   padding: 20px;
   height: 100%;
@@ -36,37 +45,40 @@ h1 {
   font-size: 0.5em;
   margin-bottom: 50px;
 }
-.projects {
-
-}
-h3 {
-  font-size: 1.5em;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1.75px;
-}
-
-li {
-  padding: 10px 0;
-  font-size: 1.2em;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
 .projects li {
   width: 100%;
-  height: 300px;
-  border: solid 1px;
+  height: 350px;
+  margin: 20px 0;
 }
-/* 
-.projects li:nth-child(1){
-  background: url('~assets/stipe.png');
+.projects li:nth-child(1n){
   background-position: center;
-  background-size: cover;
+  background-size: 90%;
 }
 .projects li:nth-child(2){
-  background: url('~assets/barzurk.png');
   background-position: center;
-  background-size: cover;
-} */
+  background-size: 110%;
+}
+.projects a {
+  position: relative;
+  top: 0;
+  left: 80%;
+  background-color: none;
+  color: #333;
+  padding: .5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+.socialLinks ul,
+.skillsList ul {
+  text-align: center;
+}
+.socialLinks li ,
+.skillsList li {
+  display: inline-block;
+  float: none;
+  margin: 20px 50px;
+}
+.socialLinks li a {
+  text-decoration: none;
+  color: #333;
+}

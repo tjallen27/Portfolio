@@ -27,9 +27,12 @@ export default class Projects extends Component {
     return (
       <div className="projects">
         <ul>
-        <h3>Personal Projects</h3>
+        <h3>What i've made</h3>
         {items.map(function(item, index){
-           return (<li style={{backgroundImage: "url(" + item.background + ")"}} key={index}><a href={item.url} target="_blank">{item.name}</a></li>)
+           return (
+            <li style={{backgroundImage: "url(" + item.background + ")"}} key={index}>
+              <a href={item.url} target="_blank">visit site</a>
+            </li>)
          })}
         </ul>
 
