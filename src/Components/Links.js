@@ -5,11 +5,11 @@ export default class Links extends Component {
     const links = [
       {name: 'Github',
       url: 'https://www.github.com/tjallen27',
-      icon: <i className="fab fa-github fa-4x"></i>
+      icon: <i className="fab fa-github fa-2x"></i>
       },
       {name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/tjallen27/',
-      icon: <i className="fab fa-linkedin-in fa-4x"></i>
+      icon: <i className="fab fa-linkedin-in fa-2x"></i>
       }
     ];
 

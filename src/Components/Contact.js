@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Links from './Links';
 
 export default class Contact extends Component{
   render(){
@@ -7,6 +8,7 @@ export default class Contact extends Component{
         <ul>
         <h3>Get in touch</h3>
           <li><a href="mailto:tjallen91@hotmail.co.uk">tjallen91@homail.co.uk</a></li>
+          <Links />
         </ul>
       </div>
     )
