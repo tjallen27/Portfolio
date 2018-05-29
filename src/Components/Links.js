@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import cv from '../assets/cv.pdf';
 
 export default class Links extends Component {
   render(){
@@ -12,7 +13,7 @@ export default class Links extends Component {
       icon: <i className="fab fa-linkedin-in fa-2x"></i>
     },
       {name: 'CV',
-      url: 'file:///Users/thomasallen/Downloads/thomas%20allen%20CV.pdf',
+      url: cv,
       icon: <i class="far fa-file-alt fa-2x"></i>
       }
     ];
