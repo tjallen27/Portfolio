@@ -14,8 +14,8 @@ class App extends Component {
       <div className="App">
         <p class="intro">Made with <i class="fab fa-react"></i></p>
         <Header />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
       </div>
     );
