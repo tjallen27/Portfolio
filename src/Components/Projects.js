@@ -7,10 +7,12 @@ export default class Projects extends Component {
     const items = [
       {
         name: 'Stripe Subscription Template',
-        url: 'https://arcane-lowlands-69670.herokuapp.com'},
+        url: 'https://arcane-lowlands-69670.herokuapp.com'
+      },
       {
         name: 'Barzurk: Job Search App',
-        url: 'https://intense-fortress-27919.herokuapp.com/'}
+        url: 'https://intense-fortress-27919.herokuapp.com/'
+      }
     ];
 
     return (
