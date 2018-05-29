@@ -29,7 +29,7 @@ export default class Projects extends Component {
     return (
       <div className="projects">
         <ul>
-        <h3>What i've made</h3>
+        <h3>Personal projects</h3>
         {items.map(function(item, index){
            return (
             <li style={{backgroundImage: "url(" + item.background + ")"}} key={index}>
