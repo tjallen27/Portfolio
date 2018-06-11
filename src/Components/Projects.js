@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
 import barzurkImg from '../assets/barzurk.png';
 import stripeImg from '../assets/stripe.png';
+import reactStore from '../assets/reactStore.png';
 
 
 
 export default class Projects extends Component {
   render(){
     const items = [
+      {
+        name: 'React Store',
+        url: 'https://github.com/tjallen27/react-store',
+        background: reactStore,
+        langs: 'ReactJS, Stripe API'
+      },
       {
         name: 'Stripe Subscription Template',
         url: 'https://arcane-lowlands-69670.herokuapp.com',
@@ -28,9 +35,9 @@ export default class Projects extends Component {
         {items.map(function(item, index){
            return (
             <li style={{backgroundImage: "url(" + item.background + ")"}} key={index}>
-              <p>{item.langs}</p>
               <a href={item.url} target="_blank">visit site</a>
             </li>)
+
          })}
         </ul>
 

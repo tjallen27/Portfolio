@@ -59,15 +59,24 @@ li {
   height: 400px;
   margin: 50px 0;
   border-radius: 10px;
+  border: solid 1px #333;
+  background-position: bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
 }
 .projects li:nth-child(1n){
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.projects li:nth-child(2){
+.projects li:nth-child(2n){
   background-position: center;
   background-size: 110%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(2){
+  background-position: center;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 .projects p {
