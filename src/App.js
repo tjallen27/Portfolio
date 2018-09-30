@@ -11,7 +11,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <p class="intro">Made with <i class="fab fa-react"></i></p>
         <Header />
         <Skills />
         <Projects />

@@ -14,7 +14,7 @@ export default class Links extends Component {
     },
       {name: 'CV',
       url: cv,
-      icon: <i class="far fa-file-alt fa-2x"></i>
+      icon: <i className="far fa-file-alt fa-2x"></i>
       }
     ];
 

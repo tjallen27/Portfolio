@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import barzurkImg from '../assets/barzurk.png';
 import stripeImg from '../assets/stripe.png';
-import reactStore from '../assets/reactStore.png';
+import klickImg from '../assets/klick.png';
 
 
 
@@ -9,10 +9,10 @@ export default class Projects extends Component {
   render(){
     const items = [
       {
-        name: 'React Store',
-        url: 'https://github.com/tjallen27/react-store',
-        background: reactStore,
-        langs: 'ReactJS, Stripe API'
+        name: 'React Stripe Store',
+        url: 'https://github.com/tjallen27/Music-Shop-Template',
+        background: klickImg,
+        langs: 'ReactJS, ExpressJS, Stripe API'
       },
       {
         name: 'Stripe Subscription Template',
@@ -34,8 +34,11 @@ export default class Projects extends Component {
         <h3>Personal projects</h3>
         {items.map(function(item, index){
            return (
-            <li style={{backgroundImage: "url(" + item.background + ")"}} key={index}>
-              <a href={item.url} target="_blank">visit site</a>
+            <li key={index}>
+
+              <a href={item.url} target="_blank">
+                <div style={{backgroundImage: "url(" + item.background + ")"}}></div>
+              </a>
             </li>)
 
          })}
