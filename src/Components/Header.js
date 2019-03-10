@@ -5,8 +5,9 @@ export default class Header extends Component {
     return (
       <div className="header">
         <h1 className="header-title">Thomas Allen</h1>
-        <div className="header-sub">Junior Web Developer</div>
-        <div className="header-current">Currently @WCRS</div>
+        <div className="header-sub">Full Stack Engineer</div>
+        <div className="header-current">Currently @yorlet</div>
+        <div className="header-current">Previous: WCRS - Junior Developer</div>
       </div>
     )
   }
