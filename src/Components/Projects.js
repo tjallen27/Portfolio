@@ -1,18 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import barzurkImg from '../assets/barzurk.png';
 import stripeImg from '../assets/stripe.png';
-import klickImg from '../assets/klick.png';
-
-
+import deadRunnersImg from '../assets/dr.png';
 
 export default class Projects extends Component {
-  render(){
+  render() {
     const items = [
       {
-        name: 'React Stripe Store',
-        url: 'https://github.com/tjallen27/Music-Shop-Template',
-        background: klickImg,
-        langs: 'ReactJS, ExpressJS, Stripe API'
+        name: 'eCommerce Store',
+        url: 'https://powerful-atoll-32442.herokuapp.com/',
+        background: deadRunnersImg,
+        langs: 'Node.js, EJS, Stripe API'
       },
       {
         name: 'Stripe Subscription Template',
@@ -31,20 +29,20 @@ export default class Projects extends Component {
     return (
       <div className="projects">
         <ul>
-        <h3>Personal projects</h3>
-        {items.map(function(item, index){
-           return (
-            <li key={index}>
-
-              <a href={item.url} target="_blank">
-                <div style={{backgroundImage: "url(" + item.background + ")"}}></div>
-              </a>
-            </li>)
-
-         })}
+          <h3>Personal projects</h3>
+          {items.map(function(item, index) {
+            return (
+              <li key={index}>
+                <a href={item.url} target="_blank">
+                  <div
+                    style={{ backgroundImage: 'url(' + item.background + ')' }}
+                  />
+                </a>
+              </li>
+            );
+          })}
         </ul>
-
       </div>
-    )
+    );
   }
 }
