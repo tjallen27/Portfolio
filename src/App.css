@@ -64,15 +64,16 @@ li {
 }
 .projects li div {
   height: 500px;
-  background-size: cover;
-  background-position: top;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .socialLinks ul,
 .skillsList ul,
 .contact ul {
   text-align: center;
 }
-.socialLinks li ,
+.socialLinks li,
 .skillsList li,
 .contact li {
   display: inline-block;
@@ -82,7 +83,6 @@ li {
 .socialLinks li a {
   text-decoration: none;
   color: #333;
-
 }
 .contact li {
   font-size: 1.5em;
@@ -91,7 +91,7 @@ li {
 .contact li a {
   background-color: none;
   color: #333;
-  padding: .5em;
+  padding: 0.5em;
   text-decoration: none;
   font-weight: bold;
 }
